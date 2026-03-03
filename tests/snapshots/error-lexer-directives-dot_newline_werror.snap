@@ -1,0 +1,21 @@
+---
+source: rns/tests/rns_test.rs
+expression: "&snapshot_content"
+---
+----- DISASSEMBLED -----
+not generated
+----- INPUT -----
+.
+.end
+----- STDERR -----
+[E001] Error: unexpected character
+   ╭─[ test_data/integration/error/lexer/directives/dot_newline.rns:1:2 ]
+   │
+ 1 │ .
+   │  ┬  
+   │  ╰── found '\n' here
+   │ 
+   │ Note: Expected one of the directives: .class, .super, .method, .end, .code, .annotation
+───╯
+----- HASH -----
+not generated

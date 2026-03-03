@@ -1,0 +1,21 @@
+---
+source: rns/tests/rns_test.rs
+expression: "&snapshot_content"
+---
+----- DISASSEMBLED -----
+not generated
+----- INPUT -----
+.class .unknown_directive HelloWorld
+.end
+----- STDERR -----
+[E001] Error: unknown directive
+   ╭─[ test_data/integration/error/lexer/directives/unknown_directive_as_second_token.rns:1:8 ]
+   │
+ 1 │ .class .unknown_directive HelloWorld
+   │        ─────────┬────────  
+   │                 ╰────────── unknown directive
+   │ 
+   │ Note: Valid directives are .class, .super, .method, .end, .code, .annotation
+───╯
+----- HASH -----
+not generated

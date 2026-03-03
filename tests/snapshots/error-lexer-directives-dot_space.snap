@@ -1,0 +1,22 @@
+---
+source: rns/tests/rns_test.rs
+expression: "&snapshot_content"
+---
+----- DISASSEMBLED -----
+not generated
+----- INPUT -----
+.method
+    . whaaat?
+.end
+----- STDERR -----
+[E001] Error: unexpected character
+   ╭─[ test_data/integration/error/lexer/directives/dot_space.rns:2:6 ]
+   │
+ 2 │     . whaaat?
+   │      ┬  
+   │      ╰── found ' ' here
+   │ 
+   │ Note: Expected one of the directives: .class, .super, .method, .end, .code, .annotation
+───╯
+----- HASH -----
+not generated
