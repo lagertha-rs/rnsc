@@ -6,17 +6,18 @@ expression: "&snapshot_content"
 not generated
 ----- INPUT -----
 .class public Test
-"String with no ending quote
+"String that breaks
+across lines"
 .end
 ----- STDERR -----
-[E-001] Error: unterminated string literal
-   ╭─[ test_data/integration/error/lexer/strings/basic_unterminated_string.rns:2:1 ]
+[E-001] Error: unterminated quoted identifier
+   ╭─[ test_data/integration/error/lexer/quoted_identifiers/unterminated_string_with_newline.rns:2:1 ]
    │
- 2 │ "String with no ending quote
+ 2 │ "String that breaks
    │ ┬  
-   │ ╰── this string literal is not terminated
+   │ ╰── this identifier is not terminated
    │ 
-   │ Help: Close the string with a '"' on the same line.
+   │ Help: Close the identifier with a '"' on the same line.
    │ 
    │ Note: For more details see:
    │       https://rune.lagertha-vm.com/errors/e-001
