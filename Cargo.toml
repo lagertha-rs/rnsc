@@ -1,15 +1,22 @@
 [package]
-name = "rns-asm"
+name = "rnsc"
 version = "0.1.0"
 edition = "2024"
+description = "RNS assembler/compiler CLI for the Lagertha VM project"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/lagertha-rs/rnsc"
+homepage = "https://github.com/lagertha-rs"
+authors = ["Obito-git"]
+keywords = ["jvm", "java", "bytecode", "assembler", "rns"]
+categories = ["compilers", "command-line-utilities"]
 
 [[bin]]
-name = "rns-asm"
+name = "rnsc"
 path = "src/main.rs"
 
 [dependencies]
-rns = { path = "../rns" }
-jclass = { path = "../jclass", features = ["rns_assemble", "rns_disassemble"] }
+rns = { package = "rns-lang", version = "0.1.0" }
+jclass = { package = "lvm-class", version = "0.1.0", features = ["rns_assemble", "rns_disassemble"] }
 clap = { version = "4", features = ["derive"] }
 
 [dev-dependencies]
