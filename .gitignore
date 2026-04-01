@@ -11,3 +11,6 @@
 
 # RNS scratch files
 /*.rns
+
+# Local cargo config (patch overrides)
+.cargo/
