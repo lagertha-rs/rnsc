@@ -8,6 +8,7 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
+  CLIPPY_ENABLED: true  # Set to false to skip clippy
 
 jobs:
   test:
@@ -29,6 +30,7 @@ jobs:
         run: cargo fmt --all -- --check
 
       - name: Clippy
+        if: env.CLIPPY_ENABLED == 'true'
         env: { RUSTFLAGS: -Dwarnings }
         run: cargo clippy --all-targets -- -D warnings
 
