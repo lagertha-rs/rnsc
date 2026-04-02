@@ -15,8 +15,8 @@ name = "rnsc"
 path = "src/main.rs"
 
 [dependencies]
-rns = { package = "rns-lang", version = "0.1.0" }
-jclass = { package = "lvm-class", version = "0.1.0", features = ["rns_assemble", "rns_disassemble"] }
+rns = { package = "rns-lang", git = "https://github.com/lagertha-rs/rns-lang", branch = "main" }
+jclass = { package = "lvm-class", git = "https://github.com/lagertha-rs/lvm-class", branch = "main", features = ["rns_assemble", "rns_disassemble"] }
 clap = { version = "4", features = ["derive"] }
 
 [dev-dependencies]
