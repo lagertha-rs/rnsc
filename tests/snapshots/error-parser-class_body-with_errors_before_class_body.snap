@@ -1,6 +1,5 @@
 ---
-source: rns-asm/tests/rns_test.rs
-assertion_line: 210
+source: tests/rns_test.rs
 expression: "&snapshot_content"
 ---
 ----- DISASSEMBLED -----
@@ -11,14 +10,14 @@ not generated
 .super java/lang/Object
 unexpected
 ----- STDERR -----
-[E-008] Error: unexpected directive before class definition
+[E-008] Error: unexpected directive outside class definition
    ╭─[ test_data/integration/error/parser/class_body/with_errors_before_class_body.rns:1:1 ]
    │
  1 │ .method shouldn't be here
    │ ───┬───  
    │    ╰───── valid context for .method directive is: 'class body'.
    │ 
-   │ Help: Make sure the file starts with a '.class' directive.
+   │ Help: Ensure all code is declared inside a '.class' directive.
    │ 
    │ Note: For more details see:
    │       https://rune.lagertha-vm.com/errors/E-008
