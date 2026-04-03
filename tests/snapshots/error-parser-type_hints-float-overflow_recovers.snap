@@ -1,6 +1,5 @@
 ---
-source: rns-asm/tests/rns_test.rs
-assertion_line: 210
+source: tests/rns_test.rs
 expression: "&snapshot_content"
 ---
 ----- DISASSEMBLED -----
@@ -24,7 +23,7 @@ unexpected_token ; <- this error should be reported as well
    │ Note: For more details see:
    │       https://rune.lagertha-vm.com/errors/E-003
 ───╯
-[E-007] Error: unexpected token in class body: 'Identifier(Spanned { value: "unexpected_token", span: Span { byte_start: 55, byte_end: 71, line: 1, col_start: 0, col_end: 16 } })'
+[E-007] Error: unexpected identifier class body
    ╭─[ test_data/integration/error/parser/type_hints/float/overflow_recovers.rns:2:1 ]
    │
  2 │ unexpected_token ; <- this error should be reported as well

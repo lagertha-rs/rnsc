@@ -11,7 +11,7 @@ not generated
 .class_end
 .
 ----- STDERR -----
-[E-008] Error: unexpected identifier outside class definition
+[E-008] Error: unexpected identifier after class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/after_class_dir/dot_tab.rns:5:1 ]
    │
  5 │ .

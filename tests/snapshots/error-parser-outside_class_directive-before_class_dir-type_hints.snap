@@ -8,7 +8,7 @@ not generated
 @string "Hello, World!"
 @int 42 ; This one is not error, because after finding the first error, the parser will stop and try to find .class
 ----- STDERR -----
-[E-008] Error: unexpected type hint outside class definition
+[E-008] Error: unexpected type hint before class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/before_class_dir/type_hints.rns:1:1 ]
    │
  1 │ @string "Hello, World!"

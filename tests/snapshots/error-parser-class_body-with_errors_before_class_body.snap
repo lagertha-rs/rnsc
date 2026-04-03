@@ -10,7 +10,7 @@ not generated
 .super java/lang/Object
 unexpected
 ----- STDERR -----
-[E-008] Error: unexpected directive outside class definition
+[E-008] Error: unexpected directive before class definition
    ╭─[ test_data/integration/error/parser/class_body/with_errors_before_class_body.rns:1:1 ]
    │
  1 │ .method shouldn't be here
@@ -22,7 +22,7 @@ unexpected
    │ Note: For more details see:
    │       https://rune.lagertha-vm.com/errors/E-008
 ───╯
-[E-007] Error: unexpected token in class body: 'Identifier(Spanned { value: "unexpected", span: Span { byte_start: 60, byte_end: 70, line: 3, col_start: 0, col_end: 10 } })'
+[E-007] Error: unexpected identifier class body
    ╭─[ test_data/integration/error/parser/class_body/with_errors_before_class_body.rns:4:1 ]
    │
  4 │ unexpected

@@ -12,7 +12,7 @@ not generated
 
 .super java/lang/Object
 ----- STDERR -----
-[E-008] Error: unexpected access flag outside class definition
+[E-008] Error: unexpected access flag before class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/before_class_dir/public_keyword.rns:1:4 ]
    │
  1 │    public

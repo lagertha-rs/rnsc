@@ -13,7 +13,7 @@ to give more feedback and not fail fast
 .class MyClass ExtraToken ; <- ExtraToken should be reported as error
 .super java/lang/Object
 ----- STDERR -----
-[E-008] Error: unexpected identifier outside class definition
+[E-008] Error: unexpected identifier before class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/before_class_dir/recovery1.rns:1:1 ]
    │
  1 │ only <- this token is error

@@ -1,6 +1,5 @@
 ---
-source: rns-asm/tests/rns_test.rs
-assertion_line: 210
+source: tests/rns_test.rs
 expression: "&snapshot_content"
 ---
 ----- DISASSEMBLED -----
@@ -27,7 +26,7 @@ not generated
    │ Note: For more details see:
    │       https://rune.lagertha-vm.com/errors/E-012
 ───╯
-[E-007] Error: unexpected token in class body: 'Identifier(Spanned { value: "unknown_token", span: Span { byte_start: 63, byte_end: 76, line: 5, col_start: 5, col_end: 18 } })'
+[E-007] Error: unexpected identifier class body
    ╭─[ test_data/integration/error/parser/super_directive/trailing_token_recovers.rns:6:6 ]
    │
  6 │      unknown_token ; <- still reported

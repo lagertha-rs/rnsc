@@ -9,7 +9,7 @@ not generated
 .class public HelloWorld
 .super java/lang/Object
 ----- STDERR -----
-[E-008] Error: unexpected directive outside class definition
+[E-008] Error: unexpected directive before class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/before_class_dir/dot_annotation.rns:1:1 ]
    │
  1 │ .annotation actually can't be here

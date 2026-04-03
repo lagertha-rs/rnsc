@@ -8,7 +8,7 @@ not generated
     . whaaat?
 .class_end
 ----- STDERR -----
-[E-008] Error: unexpected identifier outside class definition
+[E-008] Error: unexpected identifier before class definition
    ╭─[ test_data/integration/error/parser/outside_class_directive/before_class_dir/dot_space.rns:1:5 ]
    │
  1 │     . whaaat?

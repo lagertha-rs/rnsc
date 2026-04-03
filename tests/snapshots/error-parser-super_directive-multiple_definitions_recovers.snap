@@ -1,6 +1,5 @@
 ---
-source: rns-asm/tests/rns_test.rs
-assertion_line: 210
+source: tests/rns_test.rs
 expression: "&snapshot_content"
 ---
 ----- DISASSEMBLED -----
@@ -13,7 +12,7 @@ not generated
 
 kooba ; <- still reported
 ----- STDERR -----
-[E-007] Error: unexpected token in class body: 'Identifier(Spanned { value: "kooba", span: Span { byte_start: 54, byte_end: 59, line: 5, col_start: 0, col_end: 5 } })'
+[E-007] Error: unexpected identifier class body
    ╭─[ test_data/integration/error/parser/super_directive/multiple_definitions_recovers.rns:6:1 ]
    │
  6 │ kooba ; <- still reported
